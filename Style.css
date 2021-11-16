@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(27, 38, 44);
+    padding-top: 5%;
+}
+header{
+    z-index:2;
+    margin: 20px 0;
+}
+
+.Contenedor{
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    width: 100%;
+    height: 600px;
+    max-width: 70%;
+    margin: 0 auto;
+    background-color:rgb(15, 76, 117);
+    overflow: hidden;
+    box-sizing: border-box;
+    border-radius: 10%;
+    box-shadow: 0 0 10px 0 rgb(252, 156, 73);
+}
+
+h1{
+    font-family: 'Raleway', sans-serif;
+}
+h2{
+    font-family: 'Raleway', sans-serif;
+}
+.Subtitulo{
+    background: linear-gradient(50deg, rgb(253, 150, 60),rgb(168, 244, 248));
+    -webkit-background-clip: text;
+    color: transparent;
+    z-index:2;
+    position:absolute;
+    top:0;
+    margin-top: 60px;
+    padding-left: 10px;
+    box-sizing: border-box;
+
+}
+
+.Buttom{
+    display: inline-block;
+    text-decoration: none;
+    background: linear-gradient(45deg, rgb(252, 156, 73),rgba(145, 248, 253, 0.795));
+    padding: 12px 15px;
+    margin:auto auto;
+    margin-top: 10%;
+    border-radius: 8px;
+    color: black;  
+}
+
+.Buttom:hover{
+    cursor: pointer;
+    color: white;
+   background-color:black;
+}
+
+.titulo{
+    background: linear-gradient(45deg, rgb(253, 149, 58),rgba(163, 250, 255, 0.795));
+    -webkit-background-clip: text;
+    color: transparent;
+    position:absolute;
+    top:0;
+    padding-left: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+.Box1{
+    position: relative;
+    box-sizing: border-box;
+    justify-content:center;
+    margin: 0;
+    padding-right: 20px;
+
+}
+li{
+    font-family: 'Raleway', sans-serif;
+    padding: 2px;
+    color:rgb(253, 203, 158);;
+    
+}
+.Box2{
+    position:relative;
+    margin-top: 50px;
+    box-sizing: border-box;
+    padding-top: 70px;
+    
+}
+.Celda{
+    width: 60%;
+    padding-top: 2%;
+    padding-right: 10%;
+    padding-left: auto;
+    box-sizing: border-box;
+    
+}
+tr{
+    background: linear-gradient(45deg, rgb(252, 156, 73),rgba(145, 248, 253, 0.795));
+    background-color: darkgrey;
+
+}
+td{
+    padding: 7px;
+    border-style: groove;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    border-radius: 100%;
+}
+
+@media screen and (max-width: 884px){
+    .Contenedor{
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        width: 100%;
+        background-color:#9acef8;
+        overflow: hidden;
+        box-sizing: border-box;
+        height: 1000px;
+    }
+    .Subtitulo{
+        z-index:2;
+        position:absolute;
+        top:0;
+        margin-top: 45px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        font-size: 10px;
+    
+    }
+    .titulo{
+        position:absolute;
+        top:0;
+        padding-left: 10px;
+        margin: 10px;
+        box-sizing: border-box;
+        font-size: 12px;
+    }
+    .Box1{
+        position: absolute;
+        display:flex;
+        position: relative;
+        box-sizing: border-box;
+        justify-content:center;
+        margin-bottom: 600px;
+        margin-left:5%;
+        padding-right: 20px;
+    
+    }
+    li{
+        font-family: 'Raleway', sans-serif;
+        padding: 2px;
+    }
+    .Box2{
+        position:absolute;
+        margin-bottom: 120px;
+        box-sizing: border-box;
+        padding-top: 70px;
+        
+    }
+    .Celda{
+        width: 60%;
+        padding-top: 2%;
+        padding-right: 10%;
+        padding-left: auto;
+        box-sizing: border-box;
+    }
+
+}
+@media screen and (max-width: 601px){
+    .Celda{
+        display: none;
+    }
+
+}
